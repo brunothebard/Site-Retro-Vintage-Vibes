@@ -34,6 +34,12 @@ body {
         font: bold 2em 'Garamond';
         text-transform: uppercase; 
         border: double; 
+
+       
+        box-shadow: inset 0 0 30px rgb(53, 220, 226);  /* bruno mudei aqui */
+        text-shadow: 0 0 10px rgb(195, 0, 255);/* bruno mudei aqui */
+        
+        
         
     }
 
@@ -78,6 +84,9 @@ body {
         text-align: center;
         border: double;
         border-color: white;
+
+        
+        box-shadow: inset 0 0 20px rgb(171, 53, 226); /* bruno mudei aqui */
         
 
     }
@@ -275,7 +284,51 @@ body {
     }  
         
   
+/* bruno mudei aqui */
 
+#animation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.sword {
+    position: absolute;
+    width: 100px;
+    transition: transform 1s;
+}
+
+#sword-left {
+    left: -150px;
+    transform: rotate(90deg);
+}
+
+#sword-right {
+    right: -150px;
+    transform: rotate(-90deg);
+}
+
+#animation-container.show {
+    opacity: 1;
+}
+
+#animation-container.show #sword-left {
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+#animation-container.show #sword-right {
+    right: 50%;
+    transform: translateX(50%) rotate(-45deg);
+}
 
 
 
