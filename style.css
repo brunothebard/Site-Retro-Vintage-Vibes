@@ -84,7 +84,6 @@ body {
         text-align: center;
         border: double;
         border-color: white;
-
         
         box-shadow: inset 0 0 20px rgb(171, 53, 226); /* bruno mudei aqui */
         
@@ -108,6 +107,7 @@ body {
         color: var(--cor-primaria);
         text-decoration: none;
         padding: 5px;
+        
         
     }
 
