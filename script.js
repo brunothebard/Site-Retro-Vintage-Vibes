@@ -1,10 +1,12 @@
-document.getElementById('pagina-animacao').addEventListener('click', function(event){
-event.preventDefault();
+document.getElementById('pagina-animacao').addEventListener('click', function(event) {
+    event.preventDefault();  // Impede o redirecionamento imediato
 
-   const animationContainer = document.getElementById('animation-container');
-   animationContainer.classList.add("show");
+    alert('Link "Tabuleiro" clicado');  // Adiciona um alert para verificar o clique
 
-   setTimeout(() =>{
-    window.location.href = this.href;
-   }, 5000); // vou regular a duração da animação
-})
+    const animationContainer = document.getElementById('animation-container');
+    animationContainer.classList.add('show');
+
+    setTimeout(() => {
+        window.location.href = this.href;  // Redireciona para a página após a animação
+    }, 1000);  // Duração da animação
+});
