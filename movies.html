@@ -52,7 +52,7 @@
             <li><a href="#">JOGOS</a>
                  <ul>
                      <li><a href="eletrogames.html">Eletrônicos</a></li>
-                     <li><a href="boardgames.html">Tabuleiro</a></li>
+                     <li><a href="boardgames.html" id="pagina-animacao" style="cursor: pointer;" >Tabuleiro</a></li>
                  </ul> 
             <li><a href="musica.html">MÚSICA</a></li>
             <ul>
@@ -120,10 +120,15 @@
     </div>
 
    <!--bruno mudei aqui-->
-    <div id="animation-container">
-        <img src="./images/imagTransicao/aragorn-sword-right.png" class="sword" id="sword-left">
-        <img src="./images/imagTransicao/aragorn-sword-right.png" class="sword" id="sword-right">
-    </div>
+   <div class="animation-container" id="animation-container">
+    <img src="./images/imagTransicao/aragorn-espada.png" class="sword" id="sword-left">
+    <img src="./images/imagTransicao/aragorn-espada.png" class="sword1" id="sword-right">
+</div>
+
+<audio id="sword-sound">
+    <source src="./images/imagTransicao/audio/espada-som.mp3" type="audio/mpeg">
+    
+</audio>
 
     <script src="script.js"></script>
 </body>
